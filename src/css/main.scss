@@ -1,0 +1,16 @@
+$bkg: grey;
+$texte: pink;
+
+body {
+    background : $bkg;
+}
+
+h1 {
+    display: flex;
+    position: sticky;
+    color: $texte;
+}
+
+p {
+    color: $texte;
+}

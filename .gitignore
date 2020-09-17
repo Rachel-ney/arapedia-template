@@ -1,0 +1,7 @@
+# phpStorm
+.idea
+
+# parcel
+node_modules
+dist
+.cache
