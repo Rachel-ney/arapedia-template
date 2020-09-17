@@ -1,8 +1,4 @@
 // CSS
-// import '@fortawesome/fontawesome-free/css/all.css'
-// import 'reset-css'
-// import './src/css/main.scss'
-
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'reset-css'
 import './src/css/main.scss'
