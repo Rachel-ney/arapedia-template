@@ -1,10 +1,78 @@
-//.latest {
-//  display: flex;
-//  flex-direction: column;
-//}
-.latest-row {
-  display: flex;
-  .latest__article {
-    width: 50%;
+.last-article {
+  overflow: hidden;
+  margin-top: 1rem;
+  border: lighten($bkgColor, 20%) 1px solid;
+  box-shadow: $bkgColor 0.3rem 0.3rem 10px;
+
+  @include respond-to('md') {
+    margin: 1rem auto 0 auto;
+  }
+
+  .last-article__image {
+    border-bottom: lighten($bkgColor, 20%) 1px dashed;
+  }
+
+  .last-article__title {
+    font-family: $navFont;
+    font-size: 2rem;
+    text-align: center;
+    color: lighten($bkgColor, 40%);
+  }
+
+  .last-article__content {
+    padding: 1rem;
+  }
+}
+
+.latest-articles {
+
+  @include respond-to('sm') {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .latest-article {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border: lighten($bkgColor, 20%) 1px solid;
+    box-shadow: $bkgColor 0.3rem 0.3rem 10px;
+
+    @include respond-to('sm') {
+      width: 44%;
+    }
+
+    .latest-article__title {
+    font-family: $navFont;
+    font-size: 1.5rem;
+    color: lighten($bkgColor, 40%);
+    }
+
+    .latest-article__content {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@include respond-to('xl') {
+  .content {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0 0 0;
+  }
+
+  .last-article {
+    margin: 0;
+    width: 900px;
+  }
+
+  .latest-articles {
+    display: block;
+    order: -1;
+    width: 20%;
+
+    .latest-article {
+      width: 100%;
+    }
   }
 }

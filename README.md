@@ -1,11 +1,4 @@
-# Matrice Parcel
-
-Base du build Parcel comprenant : 
-- autoprefixer
-- postcss
-- reset-css
-- sass
-- fontawesome
+# Template du futur thème WP pour le site Arapédia
 
 ## Pré-requis 
 Node.js et npm
