@@ -1,0 +1,131 @@
+.nav {
+  color: $navColor;
+  font-family: $navFont;
+  font-size: 1.8rem;
+  padding-top: 0.5rem;
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    border-bottom: lighten($bkgColor, 20%) 2px solid;
+
+    .nav__hamburger {
+      margin-left: auto;
+    }
+  }
+
+  .nav-slide {
+    display: none;
+    border-bottom: lighten($bkgColor, 20%) 2px solid;
+    padding-bottom: 1rem;
+  }
+
+  .nav__link {
+    color: $navColor;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($bkgColor, 30%);
+    }
+  }
+
+  .nav__name {
+    font-size: 3rem;
+  }
+
+  .nav-menu {
+    margin: 0 0.5rem 0 0.5rem;
+
+    .nav-menu__item_margin {
+      margin-top: 1rem;
+    }
+  }
+
+  .nav-profil {
+    .nav__picture {
+      display: none;
+    }
+
+    .nav__pseudo {
+      display: none;
+    }
+
+    .nav-list {
+      margin: 0 0.5rem 0 0.5rem;
+      .nav-list__item_margin {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@include respond-to('md') {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .nav-brand {
+      display: block;
+      border-bottom: none;
+
+      .nav__hamburger {
+        display: none;
+      }
+    }
+
+    .nav-slide {
+      display: flex;
+      width: 100%;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: flex-end;
+      border-bottom: lighten($bkgColor, 20%) 2px solid;
+      margin: 0 auto 0 auto;
+      padding: 0 1rem 0.5rem 1rem;
+
+      .nav-menu__item_margin {
+        margin: 0 1.5rem 0 0;
+      }
+    }
+
+    .nav-profil {
+      .nav__picture {
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        margin: 0 auto 0 auto;
+      }
+
+      .nav__pseudo {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        .fa-chevron-down {
+          font-size: 1rem;
+        }
+      }
+
+      .nav-list {
+        position: fixed;
+        background-color: darken($bkgColor, 2%);
+        border: lighten($bkgColor, 10%) 1px solid;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        padding: 0 1rem 1rem 0.5rem;
+        margin-top: 0.5rem;
+      }
+    }
+    .nav-list_show {
+      display: block;
+    }
+
+    .nav-list_hide {
+      display: none;
+    }
+  }
+}

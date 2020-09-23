@@ -1,0 +1,10 @@
+//.latest {
+//  display: flex;
+//  flex-direction: column;
+//}
+.latest-row {
+  display: flex;
+  .latest__article {
+    width: 50%;
+  }
+}

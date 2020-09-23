@@ -1,16 +1,8 @@
-$bkg: grey;
-$texte: pink;
-
-body {
-    background : $bkg;
-}
-
-h1 {
-    display: flex;
-    position: sticky;
-    color: $texte;
-}
-
-p {
-    color: $texte;
-}
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'bases/base';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'components/buttons';
+@import 'pages/home';
+@import 'themes/theme_principal';

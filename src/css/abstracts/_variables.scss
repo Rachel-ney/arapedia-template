@@ -1,0 +1,14 @@
+$bkgColor: #251611;
+
+$navFont: (Augusta, 'Arial', sans-serif);
+$navColor: lighten($bkgColor, 40%);
+
+$contentFont: ('Arial', sans-serif);
+$contentColor: lighten($bkgColor, 30%);
+
+$breakpoints: (
+        'sm': (min-width: 500px),
+        'md': (min-width: 800px),
+        'lg': (min-width: 1000px),
+        'xl': (min-width: 1200px),
+);

@@ -5,12 +5,73 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Parcel</title>
+    <title>Arapédia</title>
 </head>
 <body>
-    <h1></h1>
-    <p><i class="far fa-hand-peace"></i></p>
-    <img src="./src/img/mountain.png" alt="mountain">
+    <div class="wrapper">
+
+    <!-- Header -->
+        <div class="nav">
+            <div class="nav-brand">
+                <a class="nav__name nav__link" href="#">Arapédia</a>
+                <span class="nav__hamburger nav__link"><i class="fas fa-bars"></i></span>
+            </div>
+            <div class="nav-slide">
+                <ul class="nav-menu">
+                    <li class="nav-menu__item_margin"> <a class="nav__link" href="#">Guides</a> </li>
+                    <li class="nav-menu__item_margin"> <a class="nav__link" href="#">A propos</a> </li>
+                    <li class="nav-menu__item_margin"> <a class="nav__link" href="#">Contact</a> </li>
+                </ul>
+                <div class="nav-profil">
+                    <img class="nav__picture" src="./src/img/profil.png" alt="profil picture">
+                    <span class="nav__pseudo nav__link">JohnDoe <i class="fas fa-chevron-down"></i></span>
+                    <ul class="nav-list nav-list_hide">
+                        <li class="nav-list__item_margin"> <a class="nav__link" href="#">Profil</a> </li>
+                        <li class="nav-list__item_margin"> <a class="nav__link" href="#">Déconnexion</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- Body -->
+        <div class="content">
+            <div class="last">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Ut quam turpis, rutrum a porttitor vel, rutrum ut justo. Fusce ut orci in ligula iaculis finibus. Consectetur adipiscing elit. Maecenas id rhoncus tellus. Maecenas id rhoncus tellus. Consectetur adipiscing elit. Fusce ut orci in ligula iaculis finibus. Ut quam turpis, rutrum a porttitor vel, rutrum ut justo.</p>
+                <img src="./src/img/profil.png" alt="Image du guide">
+            </div>
+            <div class="latest">
+                <div class="latest-row">
+                    <div class="latest__article">
+                        <h3>Lorem ipsum dolor sit amet</h3>
+                        <p>Ut quam turpis, rutrum a porttitor vel, rutrum ut justo. Fusce ut orci in ligula iaculis finibus</p>
+                    </div>
+
+                    <div class="latest__article">
+                        <h3>Morbi eu facilisis justo.</h3>
+                        <p>Consectetur adipiscing elit. Maecenas id rhoncus tellus.</p>
+                    </div>
+                </div>
+
+                <div class="latest-row">
+                    <div class="latest__article">
+                        <h3>Aliquam odio libero, volutpat gravida tristique vel</h3>
+                        <p>Maecenas id rhoncus tellus. Consectetur adipiscing elit. Fusce ut orci in ligula iaculis finibus. Ut quam turpis, rutrum a porttitor vel, rutrum ut justo. </p>
+                    </div>
+
+                    <div class="latest__article">
+                        <h3>Sed egestas luctus</h3>
+                        <p>Fusce ut orci in ligula iaculis finibus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+        <footer>
+
+        </footer>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>
