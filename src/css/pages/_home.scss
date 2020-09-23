@@ -1,12 +1,13 @@
+
+.link {
+  height: 100%;
+}
+
 .last-article {
   overflow: hidden;
   margin-top: 1rem;
   border: lighten($bkgColor, 20%) 1px solid;
   box-shadow: $bkgColor 0.3rem 0.3rem 10px;
-
-  @include respond-to('md') {
-    margin: 1rem auto 0 auto;
-  }
 
   .last-article__image {
     border-bottom: lighten($bkgColor, 20%) 1px dashed;
@@ -21,26 +22,16 @@
 
   .last-article__content {
     padding: 1rem;
+    color: $contentColor;
   }
 }
 
 .latest-articles {
-
-  @include respond-to('sm') {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
   .latest-article {
     padding: 0.5rem;
     margin-top: 1rem;
     border: lighten($bkgColor, 20%) 1px solid;
     box-shadow: $bkgColor 0.3rem 0.3rem 10px;
-
-    @include respond-to('sm') {
-      width: 44%;
-    }
 
     .latest-article__title {
     font-family: $navFont;
@@ -50,7 +41,33 @@
 
     .latest-article__content {
       margin-top: 0.5rem;
+      color: $contentColor;
     }
+  }
+}
+
+.article__signature {
+  display: block;
+  text-align: end;
+  margin-top: 0.5rem;
+  color: lighten($bkgColor, 20%);
+}
+
+@include respond-to('sm') {
+  .latest-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .latest-article {
+      width: 44%;
+    }
+  }
+}
+
+@include respond-to('md') {
+  .last-article {
+    margin: 1rem auto 0 auto;
   }
 }
 
@@ -58,11 +75,9 @@
   .content {
     display: flex;
     justify-content: space-around;
-    margin: 2rem 0 0 0;
   }
 
   .last-article {
-    margin: 0;
     width: 900px;
   }
 

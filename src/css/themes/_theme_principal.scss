@@ -5,7 +5,6 @@ body {
 .wrapper {
   background-color: lighten($bkgColor, 3%);
   width: 80%;
-  height: 100%;
   margin: 0 auto 0 auto;
   padding: 0 1rem 0 1rem;
 }
@@ -13,4 +12,5 @@ body {
 .content {
   font-family: $contentFont;
   color: $contentColor;
+  padding: 2rem 0 2rem 0;
 }
