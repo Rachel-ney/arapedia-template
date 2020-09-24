@@ -1,5 +1,4 @@
-
-.link {
+.article__link {
   height: 100%;
 }
 
@@ -8,6 +7,11 @@
   margin-top: 1rem;
   border: lighten($bkgColor, 20%) 1px solid;
   box-shadow: $bkgColor 0.3rem 0.3rem 10px;
+  background-color: $bkgColor;
+
+  &:hover {
+    background-color: darken($bkgColor, 5%);
+  }
 
   .last-article__image {
     border-bottom: lighten($bkgColor, 20%) 1px dashed;
@@ -17,31 +21,36 @@
     font-family: $navFont;
     font-size: 2rem;
     text-align: center;
-    color: lighten($bkgColor, 40%);
+    color: lighten($bkgColor, 60%);
   }
 
   .last-article__content {
     padding: 1rem;
-    color: $contentColor;
+    color: lighten($bkgColor, 50%);
   }
 }
 
 .latest-articles {
   .latest-article {
+    background-color: $bkgColor;
     padding: 0.5rem;
     margin-top: 1rem;
     border: lighten($bkgColor, 20%) 1px solid;
     box-shadow: $bkgColor 0.3rem 0.3rem 10px;
 
+    &:hover {
+      background-color: darken($bkgColor, 1%);
+    }
+
     .latest-article__title {
     font-family: $navFont;
     font-size: 1.5rem;
-    color: lighten($bkgColor, 40%);
+    color: lighten($bkgColor, 60%);
     }
 
     .latest-article__content {
       margin-top: 0.5rem;
-      color: $contentColor;
+      color: lighten($bkgColor, 50%);
     }
   }
 }
@@ -59,8 +68,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .latest-article {
-      width: 44%;
+    .latest-article__link {
+      width: 48%;
     }
   }
 }

@@ -7,9 +7,12 @@ html {
   height: 100%;
 }
 
-body {
-  height: 100%;
+@include respond-to('xl') {
+  body {
+    height: 100%;
+  }
 }
+
 
 a {
   text-decoration: none;
