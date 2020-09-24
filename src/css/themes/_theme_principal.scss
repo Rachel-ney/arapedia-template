@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Augusta";
+  src: url("../font/Augusta.ttf") format("truetype");
+}
+
 html {
   background-image: url("../img/map.jpg");
   background-attachment: fixed ;
@@ -8,14 +13,14 @@ body {
   background: linear-gradient(90deg, $bkgColor, transparent, $bkgColor);
 }
 
-.wrapper {
-  width: 80%;
-  margin: 0 auto 0 auto;
-  padding: 0 1rem 0 1rem;
+.nav_background {
+  background-image: url("../img/banner.jpg");
+  background-clip: padding-box;
+  border-bottom: $borderColor 2px solid;
 }
 
 .content {
-  font-family: $contentFont;
   color: $contentColor;
+  font-family: $contentFont;
   padding: 2rem 0 2rem 0;
 }

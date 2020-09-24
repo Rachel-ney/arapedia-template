@@ -1,11 +1,18 @@
-$bkgColor: #251611;
-
+// Font
 $navFont: (Augusta, 'Arial', sans-serif);
-$navColor: lighten($bkgColor, 40%);
-
 $contentFont: ('Arial', sans-serif);
-$contentColor: lighten($bkgColor, 30%);
 
+// Color
+$bkgColor: #251611;
+$navColor: lighten($bkgColor, 40%);
+$titleColor: lighten($bkgColor, 60%);
+$contentColor: lighten($bkgColor, 50%);
+$borderColor: lighten($bkgColor, 20%);
+
+// Effect
+$boxShadow: darken($bkgColor, 3%) 0.3rem 0.3rem 15px;
+
+// Media query
 $breakpoints: (
         'sm': (min-width: 500px),
         'md': (min-width: 800px),
